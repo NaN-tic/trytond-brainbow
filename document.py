@@ -109,7 +109,7 @@ class Document(DeactivableMixin, ModelSQL, ModelView):
             ])
 
     def get_tags_char(self, name):
-        return ', '.join([tag.name for tag in self.tags])
+        return ', '.join([tag.rec_name for tag in self.tags])
 
     @classmethod
     def search_tags_char(cls, name, clause):
