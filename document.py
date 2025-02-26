@@ -75,6 +75,7 @@ class Tag(DeactivableMixin, tree(separator=" / "), ModelSQL, ModelView):
             })
     parent = fields.Many2One('brainbow.tag', "Parent")
     children = fields.One2Many('brainbow.tag', 'parent', "Children")
+    description = fields.Text('Description')
 
     @classmethod
     def __setup__(cls):

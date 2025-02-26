@@ -13,4 +13,6 @@
         <label name="active"/>
         <field name="active"/>
     </group>
+    <separator name="description" colspan="6"/>
+    <field name="description" colspan="6" height="400"/>
 </form>
