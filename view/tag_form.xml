@@ -1,0 +1,16 @@
+<form col="6">
+    <label name="name"/>
+    <field name="name"/>
+    <label name="parent"/>
+    <field name="parent"/>
+    <group id="checkboxes" col="-1" colspan="2">
+        <label name="view"/>
+        <field name="view"/>
+        <label name="required"/>
+        <field name="required"/>
+        <label name="unique"/>
+        <field name="unique"/>
+        <label name="active"/>
+        <field name="active"/>
+    </group>
+</form>

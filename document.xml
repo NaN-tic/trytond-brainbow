@@ -1,0 +1,125 @@
+<tryton>
+    <data>
+        <record model="res.group" id="group_admin">
+            <field name="name">Brainbow Administrator</field>
+        </record>
+
+        <!-- add group to admin user -->
+        <record model="res.user-res.group" id="user_admin_group_admin">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_admin"/>
+        </record>
+        <record model="ir.ui.icon" id="icon_brainbow">
+            <field name="name">tryton-brainbow</field>
+            <field name="path">icons/brainbow.svg</field>
+        </record>
+
+        <menuitem name="Brainbow" id="menu_brainbow" icon="tryton-brainbow" sequence="10"/>
+
+        <!-- brainbow.tag -->
+        <record model="ir.ui.view" id="view_tag_list">
+            <field name="model">brainbow.tag</field>
+            <field name="type">tree</field>
+            <field name="name">tag_list</field>
+        </record>
+        <record model="ir.ui.view" id="view_tag_tree">
+            <field name="model">brainbow.tag</field>
+            <field name="type">tree</field>
+            <field name="field_childs">children</field>
+            <field name="name">tag_tree</field>
+        </record>
+        <record model="ir.ui.view" id="view_tag_form">
+            <field name="model">brainbow.tag</field>
+            <field name="type">form</field>
+            <field name="name">tag_form</field>
+        </record>
+        <record model="ir.action.act_window" id="action_brainbow_tag">
+            <field name="name">Tag</field>
+            <field name="res_model">brainbow.tag</field>
+        </record>
+        <record model="ir.action.act_window.view" id="action_brainbow_tag_list">
+            <field name="act_window" ref="action_brainbow_tag"/>
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="view_tag_list"/>
+        </record>
+        <record model="ir.action.act_window.view" id="action_brainbow_tag_form">
+            <field name="act_window" ref="action_brainbow_tag"/>
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="view_tag_form"/>
+        </record>
+
+        <record model="ir.action.act_window" id="action_brainbow_tag_tree">
+            <field name="name">Tag Tree</field>
+            <field name="res_model">brainbow.tag</field>
+            <field name="domain" eval="[('parent', '=', None)]" pyson="1"/>
+        </record>
+        <record model="ir.action.act_window.view" id="action_brainbow_tag_tree_tree">
+            <field name="act_window" ref="action_brainbow_tag_tree"/>
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="view_tag_tree"/>
+        </record>
+        <record model="ir.action.act_window.view" id="action_brainbow_tag_tree_form">
+            <field name="act_window" ref="action_brainbow_tag_tree"/>
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="view_tag_form"/>
+        </record>
+
+        <menuitem id="menu_tag_tree" parent="menu_brainbow" action="action_brainbow_tag_tree" sequence="10"/>
+        <menuitem id="menu_tag" parent="menu_tag_tree" action="action_brainbow_tag" sequence="10"/>
+
+        <record model="ir.model.access" id="access_brainbow_tag">
+            <field name="model">brainbow.tag</field>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_brainbow_tag_admin">
+            <field name="model">brainbow.tag</field>
+            <field name="group" ref="group_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <!-- brainbow.document -->
+        <record model="ir.ui.view" id="view_document_list">
+            <field name="model">brainbow.document</field>
+            <field name="type">tree</field>
+            <field name="name">document_list</field>
+        </record>
+        <record model="ir.ui.view" id="view_document_form">
+            <field name="model">brainbow.document</field>
+            <field name="type">form</field>
+            <field name="name">document_form</field>
+        </record>
+        <record model="ir.action.act_window" id="action_brainbow_document">
+            <field name="name">Document</field>
+            <field name="res_model">brainbow.document</field>
+        </record>
+        <record model="ir.action.act_window.view" id="action_brainbow_document_list">
+            <field name="act_window" ref="action_brainbow_document"/>
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="view_document_list"/>
+        </record>
+        <record model="ir.action.act_window.view" id="action_brainbow_document_form">
+            <field name="act_window" ref="action_brainbow_document"/>
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="view_document_form"/>
+        </record>
+        <menuitem id="menu_document" parent="menu_brainbow" action="action_brainbow_document" sequence="20"/>
+
+        <record model="ir.action.act_window" id="action_document_by_tag">
+            <field name="name">Documents by Tag</field>
+            <field name="res_model">brainbow.document</field>
+            <field name="context" eval="{'tags': [Eval('active_id')]}" pyson="1"/>
+            <field name="domain" eval="[('tags', 'child_of', [Eval('active_id')], 'parent')]" pyson="1"/>
+        </record>
+        <record model="ir.action.keyword" id="action_document_by_category_keyword">
+            <field name="keyword">tree_open</field>
+            <field name="model">brainbow.tag,-1</field>
+            <field name="action" ref="action_document_by_tag"/>
+        </record>
+    </data>
+</tryton>

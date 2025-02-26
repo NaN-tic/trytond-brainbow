@@ -1,0 +1,16 @@
+<tryton>
+    <data grouped="1">
+        <record model="ir.message" id="msg_document_reader_group_uniq">
+            <field name="text">Document can only have the same Reader Group once.</field>
+        </record>
+        <record model="ir.message" id="msg_document_writer_group_uniq">
+            <field name="text">Document can only have the same Writer Group once.</field>
+        </record>
+        <record model="ir.message" id="msg_document_tag_uniq">
+            <field name="text">Document can only have the same Tag once.</field>
+        </record>
+        <record model="ir.message" id="brainbow.msg_tag_name_unique">
+            <field name="text">Tag name must be unique per parent.</field>
+        </record>
+    </data>
+</tryton>
