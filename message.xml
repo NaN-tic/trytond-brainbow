@@ -9,8 +9,14 @@
         <record model="ir.message" id="msg_document_tag_uniq">
             <field name="text">Document can only have the same Tag once.</field>
         </record>
-        <record model="ir.message" id="brainbow.msg_tag_name_unique">
+        <record model="ir.message" id="msg_tag_name_unique">
             <field name="text">Tag name must be unique per parent.</field>
+        </record>
+        <record model="ir.message" id="msg_missing_tags">
+            <field name="text">Document "%(document)s" must have one of the tags inside "%(tags)s".</field>
+        </record>
+        <record model="ir.message" id="msg_repeated_unique">
+            <field name="text">Document "%(document)s" has more than one child tag of "%(tag)s".</field>
         </record>
     </data>
 </tryton>
