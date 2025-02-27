@@ -237,6 +237,12 @@ class Document(DeactivableMixin, ModelSQL, ModelView):
         Index.compute_indexes(all_indexes)
 
     @classmethod
+    def delete(cls, documents):
+        Index = Pool().get('kb.index')
+        Index.delete(Index.search([('resource', 'in', documents)]))
+        super().delete(documents)
+
+    @classmethod
     def _check_tags(cls, documents, field_names):
         Tag = Pool().get('brainbow.tag')
 
