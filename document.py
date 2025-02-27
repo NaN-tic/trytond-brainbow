@@ -271,7 +271,7 @@ class Document(DeactivableMixin, ModelSQL, ModelView):
                 exists = cls.check_if_exist(required_children, document.tags)
                 if not exists:
                     cat_required = [c.name for c in required_tags]
-                    raise UserError(gettext('brainbow.missing_tags',
+                    raise UserError(gettext('brainbow.msg_missing_tags',
                         document=document.rec_name,
                         tags=', '.join(cat_required[:3])))
 
@@ -284,8 +284,9 @@ class Document(DeactivableMixin, ModelSQL, ModelView):
                             ])
                     if len(set(children) & set(document.tags)) > 1:
                         raise UserError(
-                            gettext('brainbow.repeated_unique',
-                            document=document.rec_name))
+                            gettext('brainbow.msg_repeated_unique',
+                            document=document.rec_name,
+                            tag=unique_tag.rec_name))
 
     @staticmethod
     def check_if_exist(list1, list2):
