@@ -1,0 +1,186 @@
+#
+# albert, 2025.
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Last-Translator: albert\n"
+"PO-Revision-Date: 2025-05-26 16:03+0200\n"
+"Project-Id-Version: \n"
+"Language-Team: Catalan <>\n"
+"Language: ca_ES\n"
+"Content-Transfer-Encoding: 8bit\n"
+"MIME-Version: 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 22.12.3\n"
+
+msgctxt "field:brainbow.document,language:"
+msgid "Language"
+msgstr "Idioma"
+
+msgctxt "field:brainbow.document,name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:brainbow.document,reader_groups:"
+msgid "Reader Groups"
+msgstr "Grups de lectors"
+
+msgctxt "field:brainbow.document,resource:"
+msgid "Resource"
+msgstr "Recurs"
+
+msgctxt "field:brainbow.document,tags:"
+msgid "Tags"
+msgstr "Etiquetes"
+
+msgctxt "field:brainbow.document,tags_char:"
+msgid "Tags"
+msgstr "Etiquetes"
+
+msgctxt "field:brainbow.document,text:"
+msgid "Text"
+msgstr "Text"
+
+msgctxt "field:brainbow.document,writer_groups:"
+msgid "Writer Groups"
+msgstr "Grups d'escriptors"
+
+msgctxt "field:brainbow.document-reader-group,document:"
+msgid "Document"
+msgstr "Document"
+
+msgctxt "field:brainbow.document-reader-group,reader_group:"
+msgid "Reader Group"
+msgstr "Grup de Lectors"
+
+msgctxt "field:brainbow.document-tag,document:"
+msgid "Document"
+msgstr "Document"
+
+msgctxt "field:brainbow.document-tag,tag:"
+msgid "Tag"
+msgstr "Etiqueta"
+
+msgctxt "field:brainbow.document-writer-group,document:"
+msgid "Document"
+msgstr "Document"
+
+msgctxt "field:brainbow.document-writer-group,writer_group:"
+msgid "Writer Group"
+msgstr "Grup d'escriptors"
+
+msgctxt "field:brainbow.tag,children:"
+msgid "Children"
+msgstr "Fills"
+
+msgctxt "field:brainbow.tag,description:"
+msgid "Description"
+msgstr "Descripció"
+
+msgctxt "field:brainbow.tag,name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:brainbow.tag,parent:"
+msgid "Parent"
+msgstr "Pare"
+
+msgctxt "field:brainbow.tag,required:"
+msgid "Required"
+msgstr "Obligatori"
+
+msgctxt "field:brainbow.tag,unique:"
+msgid "Unique"
+msgstr "Únic"
+
+msgctxt "field:brainbow.tag,view:"
+msgid "View"
+msgstr "Vista"
+
+msgctxt "model:brainbow.document,name:"
+msgid "Brainbow Document"
+msgstr "Document Brainbow"
+
+msgctxt "model:brainbow.document-reader-group,name:"
+msgid "Brainbow Document - Reader Group"
+msgstr "Document Brainbow - Grup de lectors"
+
+msgctxt "model:brainbow.document-tag,name:"
+msgid "Brainbow Document - Tag"
+msgstr "Document Brainbow - Etiqueta"
+
+msgctxt "model:brainbow.document-writer-group,name:"
+msgid "Brainbow Document - Writer Group"
+msgstr "Document Brainbow - Grup d'escriptors"
+
+msgctxt "model:brainbow.tag,name:"
+msgid "Brainbow Tag"
+msgstr "Etiqueta Brainbow"
+
+msgctxt "model:ir.action,name:action_brainbow_document"
+msgid "Document"
+msgstr "Document"
+
+msgctxt "model:ir.action,name:action_brainbow_tag"
+msgid "Tag"
+msgstr "Etiqueta"
+
+msgctxt "model:ir.action,name:action_brainbow_tag_tree"
+msgid "Tag Tree"
+msgstr "Arbre d'etiquetes"
+
+msgctxt "model:ir.action,name:action_document_by_tag"
+msgid "Documents by Tag"
+msgstr "Documents per etiqueta"
+
+msgctxt "model:ir.message,text:msg_document_reader_group_uniq"
+msgid "Document can only have the same Reader Group once."
+msgstr "Un document només pot tenir el mateix grup de lectors una vegada."
+
+msgctxt "model:ir.message,text:msg_document_tag_uniq"
+msgid "Document can only have the same Tag once."
+msgstr "Un document només pot tenir la mateixa etiqueta una vegada."
+
+msgctxt "model:ir.message,text:msg_document_writer_group_uniq"
+msgid "Document can only have the same Writer Group once."
+msgstr "Un document només pot tenir el mateix grup d'escriptors una vegada."
+
+msgctxt "model:ir.message,text:msg_missing_tags"
+msgid ""
+"Document \"%(document)s\" must have one of the tags inside \"%(tags)s\"."
+msgstr ""
+"El document \"%(document)s\" ha de tenir una de les etiquetes dins de "
+"\"%(tags)s\"."
+
+msgctxt "model:ir.message,text:msg_repeated_unique"
+msgid "Document \"%(document)s\" has more than one child tag of \"%(tag)s\"."
+msgstr ""
+"El document \"%(document)s\" té més d'una etiqueta filla de \"%(tag)s\"."
+
+msgctxt "model:ir.message,text:msg_tag_name_unique"
+msgid "Tag name must be unique per parent."
+msgstr "El nom de l'etiqueta ha de ser únic per a cada pare."
+
+msgctxt "model:ir.ui.menu,name:menu_brainbow"
+msgid "Brainbow"
+msgstr "Brainbow"
+
+msgctxt "model:ir.ui.menu,name:menu_document"
+msgid "Document"
+msgstr "Document"
+
+msgctxt "model:ir.ui.menu,name:menu_tag"
+msgid "Tag"
+msgstr "Etiqueta"
+
+msgctxt "model:ir.ui.menu,name:menu_tag_tree"
+msgid "Tag Tree"
+msgstr "Arbre d'etiquetes"
+
+msgctxt "model:res.group,name:group_admin"
+msgid "Brainbow Administrator"
+msgstr "Administrador de Brainbow"
+
+msgctxt "view:brainbow.document:"
+msgid "Access"
+msgstr "Accés"
