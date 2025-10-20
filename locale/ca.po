@@ -1,17 +1,6 @@
 #
-# albert, 2025.
 msgid ""
-msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
-"Last-Translator: albert\n"
-"PO-Revision-Date: 2025-05-26 16:03+0200\n"
-"Project-Id-Version: \n"
-"Language-Team: Catalan <>\n"
-"Language: ca_ES\n"
-"Content-Transfer-Encoding: 8bit\n"
-"MIME-Version: 1.0\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "field:brainbow.document,language:"
 msgid "Language"
@@ -146,16 +135,14 @@ msgid "Document can only have the same Writer Group once."
 msgstr "Un document només pot tenir el mateix grup d'escriptors una vegada."
 
 msgctxt "model:ir.message,text:msg_missing_tags"
-msgid ""
-"Document \"%(document)s\" must have one of the tags inside \"%(tags)s\"."
+msgid "Document \"%(document)s\" must have one of the tags inside \"%(tags)s\"."
 msgstr ""
 "El document \"%(document)s\" ha de tenir una de les etiquetes dins de "
 "\"%(tags)s\"."
 
 msgctxt "model:ir.message,text:msg_repeated_unique"
 msgid "Document \"%(document)s\" has more than one child tag of \"%(tag)s\"."
-msgstr ""
-"El document \"%(document)s\" té més d'una etiqueta filla de \"%(tag)s\"."
+msgstr "El document \"%(document)s\" té més d'una etiqueta filla de \"%(tag)s\"."
 
 msgctxt "model:ir.message,text:msg_tag_name_unique"
 msgid "Tag name must be unique per parent."
@@ -180,6 +167,10 @@ msgstr "Arbre d'etiquetes"
 msgctxt "model:res.group,name:group_admin"
 msgid "Brainbow Administrator"
 msgstr "Administrador de Brainbow"
+
+msgctxt "model:res.group,name:group_brainbow"
+msgid "Brainbow"
+msgstr "Brainbow"
 
 msgctxt "view:brainbow.document:"
 msgid "Access"

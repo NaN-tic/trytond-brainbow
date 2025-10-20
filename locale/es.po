@@ -1,17 +1,17 @@
 #
-# albert, 2025.
+# SPDX-FileCopyrightText: 2025 albert
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Last-Translator: albert\n"
-"PO-Revision-Date: 2025-05-26 16:01+0200\n"
+"PO-Revision-Date: 2025-10-20 19:03+0200\n"
 "Project-Id-Version: \n"
 "Language-Team: Catalan <>\n"
 "Language: ca_ES\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 msgctxt "field:brainbow.document,language:"
 msgid "Language"
@@ -155,8 +155,7 @@ msgstr ""
 msgctxt "model:ir.message,text:msg_repeated_unique"
 msgid "Document \"%(document)s\" has more than one child tag of \"%(tag)s\"."
 msgstr ""
-"El documento \"%(document)s\" tiene más de una etiqueta hija de "
-"\"%(tag)s\"."
+"El documento \"%(document)s\" tiene más de una etiqueta hija de \"%(tag)s\"."
 
 msgctxt "model:ir.message,text:msg_tag_name_unique"
 msgid "Tag name must be unique per parent."
@@ -181,6 +180,10 @@ msgstr "Árbol de etiquetas"
 msgctxt "model:res.group,name:group_admin"
 msgid "Brainbow Administrator"
 msgstr "Administrador de Brainbow"
+
+msgctxt "model:res.group,name:group_brainbow"
+msgid "Brainbow"
+msgstr "Brainbow"
 
 msgctxt "view:brainbow.document:"
 msgid "Access"
