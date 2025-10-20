@@ -1,0 +1,162 @@
+#
+# SPDX-FileCopyrightText: 2025 albert
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Last-Translator: albert\n"
+"PO-Revision-Date: 2025-10-20 18:55+0200\n"
+"Project-Id-Version: \n"
+"Language-Team: Catalan <>\n"
+"Language: ca_ES\n"
+"Content-Transfer-Encoding: 8bit\n"
+"MIME-Version: 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 25.04.0\n"
+
+msgctxt "field:brainbow.document,language:"
+msgid "Language"
+msgstr "Idioma"
+
+msgctxt "field:brainbow.document,name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:brainbow.document,reader_groups:"
+msgid "Reader Groups"
+msgstr "Grupos de lectores"
+
+msgctxt "field:brainbow.document,resource:"
+msgid "Resource"
+msgstr "Recurso"
+
+msgctxt "field:brainbow.document,tags:"
+msgid "Tags"
+msgstr "Etiquetas"
+
+msgctxt "field:brainbow.document,tags_char:"
+msgid "Tags"
+msgstr "Etiquetas"
+
+msgctxt "field:brainbow.document,text:"
+msgid "Text"
+msgstr "Texto"
+
+msgctxt "field:brainbow.document,writer_groups:"
+msgid "Writer Groups"
+msgstr "Grupos de escritores"
+
+msgctxt "field:brainbow.document-reader-group,document:"
+msgid "Document"
+msgstr "Documento"
+
+msgctxt "field:brainbow.document-reader-group,reader_group:"
+msgid "Reader Group"
+msgstr "Grupo de lectores"
+
+msgctxt "field:brainbow.document-tag,document:"
+msgid "Document"
+msgstr "Documento"
+
+msgctxt "field:brainbow.document-tag,tag:"
+msgid "Tag"
+msgstr "Etiqueta"
+
+msgctxt "field:brainbow.document-writer-group,document:"
+msgid "Document"
+msgstr "Documento"
+
+msgctxt "field:brainbow.document-writer-group,writer_group:"
+msgid "Writer Group"
+msgstr "Grupo de escritores"
+
+msgctxt "field:brainbow.tag,children:"
+msgid "Children"
+msgstr "Hijos"
+
+msgctxt "field:brainbow.tag,description:"
+msgid "Description"
+msgstr "Descripción"
+
+msgctxt "field:brainbow.tag,name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:brainbow.tag,parent:"
+msgid "Parent"
+msgstr "Padre"
+
+msgctxt "field:brainbow.tag,required:"
+msgid "Required"
+msgstr "Requerido"
+
+msgctxt "field:brainbow.tag,unique:"
+msgid "Unique"
+msgstr "Único"
+
+msgctxt "field:brainbow.tag,view:"
+msgid "View"
+msgstr "Vista"
+
+msgctxt "model:brainbow.document,name:"
+msgid "Brainbow Document"
+msgstr "Documento Brainbow"
+
+msgctxt "model:brainbow.document-reader-group,name:"
+msgid "Brainbow Document - Reader Group"
+msgstr "Documento Brainbow - Grupo de lectores"
+
+msgctxt "model:brainbow.document-tag,name:"
+msgid "Brainbow Document - Tag"
+msgstr "Documento Brainbow - Etiqueta"
+
+msgctxt "model:brainbow.document-writer-group,name:"
+msgid "Brainbow Document - Writer Group"
+msgstr "Documento Brainbow - Grupo de escritores"
+
+msgctxt "model:brainbow.tag,name:"
+msgid "Brainbow Tag"
+msgstr "Etiqueta Brainbow"
+
+msgctxt "model:ir.action,name:action_brainbow_document"
+msgid "Document"
+msgstr "Documento"
+
+msgctxt "model:ir.action,name:action_brainbow_tag"
+msgid "Tag"
+msgstr "Etiqueta"
+
+msgctxt "model:ir.action,name:action_brainbow_tag_tree"
+msgid "Tag Tree"
+msgstr "Árbol de etiquetas"
+
+msgctxt "model:ir.action,name:action_document_by_tag"
+msgid "Documents by Tag"
+msgstr "Documentos por etiqueta"
+
+msgctxt "model:ir.ui.menu,name:menu_brainbow"
+msgid "Brainbow"
+msgstr "Brainbow"
+
+msgctxt "model:ir.ui.menu,name:menu_document"
+msgid "Document"
+msgstr "Documento"
+
+msgctxt "model:ir.ui.menu,name:menu_tag"
+msgid "Tag"
+msgstr "Etiqueta"
+
+msgctxt "model:ir.ui.menu,name:menu_tag_tree"
+msgid "Tag Tree"
+msgstr "Árbol de etiquetas"
+
+msgctxt "model:res.group,name:group"
+msgid "Brainbow"
+msgstr "Brainbow"
+
+msgctxt "model:res.group,name:group_admin"
+msgid "Brainbow Administrator"
+msgstr "Administrador de Brainbow"
+
+msgctxt "view:brainbow.document:"
+msgid "Access"
+msgstr "Acceso"
