@@ -1,7 +1,11 @@
 <tryton>
     <data>
+        <record model="res.group" id="group_brainbow">
+            <field name="name">Brainbow</field>
+        </record>
         <record model="res.group" id="group_admin">
             <field name="name">Brainbow Administrator</field>
+            <field name="parent" ref="group_brainbow"/>
         </record>
 
         <!-- add group to admin user -->
@@ -15,6 +19,10 @@
         </record>
 
         <menuitem name="Brainbow" id="menu_brainbow" icon="tryton-brainbow" sequence="10"/>
+        <record model="ir.ui.menu-res.group" id="menu_brainbow_grouop">
+            <field name="menu" ref="menu_brainbow"/>
+            <field name="group" ref="group_brainbow"/>
+        </record>
 
         <!-- brainbow.tag -->
         <record model="ir.ui.view" id="view_tag_list">
@@ -69,6 +77,14 @@
 
         <record model="ir.model.access" id="access_brainbow_tag">
             <field name="model">brainbow.tag</field>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_brainbow_tag_brainbow">
+            <field name="model">brainbow.tag</field>
+            <field name="group" ref="group_brainbow"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_create" eval="False"/>
             <field name="perm_write" eval="False"/>
@@ -120,6 +136,14 @@
             <field name="keyword">tree_open</field>
             <field name="model">brainbow.tag,-1</field>
             <field name="action" ref="action_document_by_tag"/>
+        </record>
+
+        <record model="ir.model.access" id="access_brainbow_document">
+            <field name="model">brainbow.document</field>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_delete" eval="False"/>
         </record>
     </data>
 </tryton>
