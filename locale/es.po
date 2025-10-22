@@ -118,12 +118,12 @@ msgid "Brainbow Tag"
 msgstr "Etiqueta Brainbow"
 
 msgctxt "model:ir.action,name:action_brainbow_document"
-msgid "Document"
-msgstr "Documento"
+msgid "Documents"
+msgstr "Documentos"
 
 msgctxt "model:ir.action,name:action_brainbow_tag"
-msgid "Tag"
-msgstr "Etiqueta"
+msgid "Tags"
+msgstr "Etiquetas"
 
 msgctxt "model:ir.action,name:action_brainbow_tag_tree"
 msgid "Tag Tree"
@@ -166,12 +166,12 @@ msgid "Brainbow"
 msgstr "Brainbow"
 
 msgctxt "model:ir.ui.menu,name:menu_document"
-msgid "Document"
-msgstr "Documento"
+msgid "Documents"
+msgstr "Documentos"
 
 msgctxt "model:ir.ui.menu,name:menu_tag"
-msgid "Tag"
-msgstr "Etiqueta"
+msgid "Tags"
+msgstr "Etiquetas"
 
 msgctxt "model:ir.ui.menu,name:menu_tag_tree"
 msgid "Tag Tree"
