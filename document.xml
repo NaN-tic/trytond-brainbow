@@ -111,7 +111,7 @@
             <field name="name">document_form</field>
         </record>
         <record model="ir.action.act_window" id="action_brainbow_document">
-            <field name="name">Document</field>
+            <field name="name">Documents</field>
             <field name="res_model">brainbow.document</field>
         </record>
         <record model="ir.action.act_window.view" id="action_brainbow_document_list">
@@ -144,6 +144,14 @@
             <field name="perm_create" eval="False"/>
             <field name="perm_write" eval="False"/>
             <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_brainbow_document_brainbow">
+            <field name="model">brainbow.document</field>
+            <field name="group" ref="group_brainbow"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_delete" eval="True"/>
         </record>
     </data>
 </tryton>
