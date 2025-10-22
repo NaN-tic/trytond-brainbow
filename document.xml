@@ -42,7 +42,7 @@
             <field name="name">tag_form</field>
         </record>
         <record model="ir.action.act_window" id="action_brainbow_tag">
-            <field name="name">Tag</field>
+            <field name="name">Tags</field>
             <field name="res_model">brainbow.tag</field>
         </record>
         <record model="ir.action.act_window.view" id="action_brainbow_tag_list">
