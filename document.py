@@ -229,7 +229,7 @@ class Document(DeactivableMixin, ModelSQL, ModelView):
         if field_names and not field_names & {'text', 'language'}:
             return
 
-        default_language = Config.get_default_language()
+        default_language = Config.get_language()
         all_indexes = {}
         for document in documents:
             indexes = []
