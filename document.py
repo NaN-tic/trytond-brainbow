@@ -222,17 +222,24 @@ class Document(DeactivableMixin, ModelSQL, ModelView):
 
     @classmethod
     def indexate(cls, documents, field_names=None):
-        Index = Pool().get('kb.index')
+        pool = Pool()
+        Index = pool.get('kb.index')
+        Config = pool.get('ir.configuration')
 
         if field_names and not field_names & {'text', 'language'}:
             return
+
+        default_language = Config.get_default_language()
         all_indexes = {}
         for document in documents:
             indexes = []
+            if document.language:
+                language = document.language.code
+            else:
+                language = default_language
             for paragraph in split_markdown_paragraphs(document.text):
                 indexes.append(Index(text=paragraph,
-                    language_code=document.language.code,
-                    resource=document))
+                    language_code=language, resource=document))
             all_indexes[document] = indexes
         Index.compute_indexes(all_indexes)
 
