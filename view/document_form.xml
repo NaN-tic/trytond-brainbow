@@ -1,0 +1,22 @@
+<form col="6">
+    <label name="name"/>
+    <field name="name"/>
+    <label name="language"/>
+    <field name="language"/>
+    <label name="active"/>
+    <field name="active"/>
+    <label name="resource"/>
+    <field name="resource" colspan="5"/>
+    <notebook colspan="6">
+        <page name="text">
+            <field name="text" colspan="4" height="500"/>
+        </page>
+        <page name="tags">
+            <field name="tags" colspan="4" height="500"/>
+        </page>
+        <page id="access" string="Access">
+            <field name="reader_groups" height="500" colspan="2"/>
+            <field name="writer_groups" height="500" colspan="2"/>
+        </page>
+    </notebook>
+</form>
