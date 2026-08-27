@@ -4,8 +4,8 @@
    id="Layer_1"
    x="0px"
    y="0px"
-   width="100%"
-   viewBox="0 0 456 437"
+   width="24"
+   viewBox="0 0 24 24"
    enable-background="new 0 0 456 437"
    xml:space="preserve"
    sodipodi:docname="brainbow.svg"
@@ -13,7 +13,8 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   xmlns:svg="http://www.w3.org/2000/svg" height="24">
+  <g data-icon-normalized="1" transform="matrix(0.0526315789,0,0,0.0526315789,0,0.5)"><defs
    id="defs1424" /><sodipodi:namedview
    id="namedview1422"
    pagecolor="#ffffff"
@@ -4216,4 +4217,6 @@
    stroke="none"
    d=" M82.077797,341.469421   C83.375893,341.106750 84.782021,341.070068 86.609589,341.068726   C85.759644,343.743317 84.095551,343.630066 82.077797,341.469421  z"
    id="path1419" />
+
+  </g>
 </svg>
